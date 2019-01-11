@@ -9,7 +9,7 @@ const App = () =>{
     return(
         <div className="container">
             <div className="row">
-                <h1>WeatherApp</h1>
+                <h1>.</h1>
                 <SearchBar />
             </div>
             <div className="row">
