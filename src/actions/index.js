@@ -1,5 +1,5 @@
 import axios from 'axios';
-import { FETCH_WEATHER, LOCATION_NOT_FOUND } from '../constants';
+import { FETCH_WEATHER } from '../constants';
 
 const API_KEY = "57d4bf0521ae47722c5a38add3638190";
 const COUNTRY_CODE = "us";
@@ -20,10 +20,7 @@ export function fetchWeather(city){
             })
         })
         .catch((error)=>{
-            dispatch({
-                type: LOCATION_NOT_FOUND,
-                payload: error,
-            })
+            console.log(error);
         });
     }
 }

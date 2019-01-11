@@ -13,7 +13,9 @@ const App = () =>{
                 <SearchBar />
             </div>
             <div className="row">
-                <WeatherList />
+                <div className="col col-12">
+                    <WeatherList />
+                </div>
             </div>
         </div>
     )
