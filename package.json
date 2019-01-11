@@ -26,5 +26,18 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "description": "Basic weather forcast app with React Redux",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/neilreyes/weatherforcast.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/neilreyes/weatherforcast/issues"
+  },
+  "homepage": "https://github.com/neilreyes/weatherforcast#readme"
 }
