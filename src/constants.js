@@ -1,1 +1,2 @@
 export const FETCH_WEATHER = 'FETCH_WEATHER';
+export const LOCATION_NOT_FOUND = 'LOCATION_NOT_FOUND';

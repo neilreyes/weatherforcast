@@ -1,5 +1,5 @@
 import axios from 'axios';
-import { FETCH_WEATHER } from '../constants';
+import { FETCH_WEATHER, LOCATION_NOT_FOUND } from '../constants';
 
 const API_KEY = "57d4bf0521ae47722c5a38add3638190";
 const COUNTRY_CODE = "us";
@@ -12,10 +12,17 @@ export function fetchWeather(city){
     const request = axios.get(url);
 
     return (dispatch) => {
-        request.then((data) => {
+        request
+        .then((data) => {
             dispatch({
                 type: FETCH_WEATHER,
                 payload: data
+            })
+        })
+        .catch((error)=>{
+            dispatch({
+                type: LOCATION_NOT_FOUND,
+                payload: error,
             })
         });
     }
