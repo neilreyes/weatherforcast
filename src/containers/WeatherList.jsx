@@ -4,7 +4,7 @@ import { connect } from 'react-redux';
 class WeatherList extends Component{
     render(){
         return(
-            <table>
+            <table className="table">
                 <thead>
                     <tr>
                         <th>City</th>
